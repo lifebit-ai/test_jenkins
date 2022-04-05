@@ -8,6 +8,8 @@ pipeline {
         }
         stage('build') {
             steps {
+                sh 'pwd'
+                sh 'ls -lah
                 sh 'python --version'
             }
         }
