@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'python:3.10.1-alpine' } }
+    agent { docker { image 'quay.io/lifebitai/cloudos-py:v0.0.7' } }
     stages {
         stage('build') {
             steps {
