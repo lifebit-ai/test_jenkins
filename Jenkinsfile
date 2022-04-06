@@ -15,7 +15,7 @@ pipeline {
         }
         stage('submit') {
             steps {
-                sh 'cloudos job run -k Syv8mRIgdNNFJKvAYF1jVTOXnHMQo6mJLTk1yRno --workspace-id 614af4dc31de9201a5c3ce48 --project-name test --workflow-name pcgr-nf --job-config conf/test.config --resumable --spot --wait-completion'
+                sh 'cloudos job run -k GXfwBP2eujWJlGUzibgbQh1hSVBelNh1WJzHII80 --workspace-id 614af4dc31de9201a5c3ce48 --project-name test --workflow-name bi-metagwas-nf --job-config conf/basic_test.config --resumable --spot --wait-completion'
             }
         }
     }
