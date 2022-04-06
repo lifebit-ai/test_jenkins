@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git') {
             steps {
-                git url:'https://github.com/lifebit-ai/bi-metagwas-nf', branch:'dev'
+                git url:'https://github.com/lifebit-ai/spammer-nf', branch:'google'
             }
         }
         stage('build') {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('submit') {
             steps {
-                sh 'cloudos job run -k GXfwBP2eujWJlGUzibgbQh1hSVBelNh1WJzHII80 --workspace-id 614af4dc31de9201a5c3ce48 --project-name test --workflow-name bi-metagwas-nf --job-config conf/basic_test.config --resumable --spot --wait-completion'
+                sh 'cloudos job run -k GXfwBP2eujWJlGUzibgbQh1hSVBelNh1WJzHII80 --workspace-id 614af4dc31de9201a5c3ce48 --project-name test --workflow-name spammer-nf --job-config conf/processA_cpus_4.config --resumable --spot --wait-completion'
             }
         }
     }
