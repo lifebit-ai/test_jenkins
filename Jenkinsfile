@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git') {
             steps {
-                git url:'https://github.com/lifebit-ai/pcgr-nf', branch:'dev-DEL-3310'
+                git url:'https://github.com/lifebit-ai/bi-metagwas-nf', branch:'dev'
             }
         }
         stage('build') {
