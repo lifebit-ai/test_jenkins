@@ -15,7 +15,7 @@ pipeline {
         }
         stage('submit') {
             steps {
-                sh 'cloudos job run -k GXfwBP2eujWJlGUzibgbQh1hSVBelNh1WJzHII80 --workspace-id 614af4dc31de9201a5c3ce48 --project-name test --workflow-name spammer-nf --job-config conf/processA_cpus_4.config --resumable --spot --wait-completion'
+                sh 'cloudos job run -k GXfwBP2eujWJlGUzibgbQh1hSVBelNh1WJzHII80 --workspace-id 614af4dc31de9201a5c3ce48 --project-name test --workflow-name spammer-nf --job-config conf/local.config --resumable --spot --wait-completion'
             }
         }
     }
